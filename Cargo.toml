@@ -2,10 +2,15 @@
 name = "pdf2svg"
 version = "0.1.0"
 edition = "2024"
+description = "Convert PDF pages to SVG format using MuPDF"
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/yourusername/pdf2svg"
+readme = "README.md"
+keywords = ["pdf", "svg", "convert", "mupdf"]
+categories = ["command-line-utilities", "multimedia"]
 
 [dependencies]
+anyhow = "1.0.99"
+clap = { version = "4.5.45", features = ["derive"] }
 mupdf = "0.5.0"
-
-[profile.release]
-strip = true
-opt-level = "z"
